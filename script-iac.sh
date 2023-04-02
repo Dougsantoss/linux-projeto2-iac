@@ -1,21 +1,30 @@
 #!/bin/bash
 
 echo "|-----------------------------------------|"
-echo "|   Iniciando configufações do servidor   |"
+echo "|   Iniciando configurações do servidor   |"
 echo "|-----------------------------------------|"
 
 apt-get update
 apt-get ugrade -y
 
-echo " Iniciando instalação APACHE..."
+echo "|-------------------------------|"
+echo "|  Iniciando instalação APACHE  |"
+echo "|-------------------------------|"
+
 
 apt-get install apache2 -y
 
-echo " Instalando UNZIP..."
+echo "|--------------------|"
+echo "|  Instalando UNZIP  |"
+echo "|--------------------|"
 
 apt-get install unzip -y
 
-echo " Baixando e copiando arquivos da aplicação..."
+
+echo "|----------------------------------------------|"
+echo "|   Baixando e copiando arquivos da aplicação  |"
+echo "|----------------------------------------------|"
+
 
 cd /tmp
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
